@@ -1,0 +1,171 @@
+*,
+ ::after,
+ ::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #111111;
+}
+
+.section {
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    flex-flow: column;
+}
+
+.text-1,
+.text-2 {
+    font-size: 2rem;
+    color: #9d7d00;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 0.7px;
+    margin: 0 0 2rem 0;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+.content-2 {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    flex-flow: column wrap;
+}
+
+.times {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+.about-UTC {
+    text-align: center;
+    width: 30rem;
+    margin-top: 3rem;
+}
+
+@media (max-width:700px) {
+    .text-1 {
+        font-size: 1.3rem;
+    }
+    .about-UTC {
+        text-align: center;
+        width: 20rem;
+        margin-top: 3rem;
+    }
+}
+
+.clock,
+.clock-2 {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 0.7rem;
+    background: #252725;
+    border-radius: 10px;
+    color: #fcd539;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    cursor: default;
+}
+
+
+/*  hide content 2 */
+
+.content-2 {
+    visibility: hidden;
+    z-index: -100;
+}
+
+.showContent-2 {
+    visibility: visible;
+    z-index: 100;
+}
+
+.clock:hover,
+.clock-2:hover {
+    /*    width: 4.2rem;
+    height: 4.2rem; */
+    margin: 0 0.7rem;
+    background: linear-gradient(#bd9d1d, #30280b);
+    transition: 0.3s;
+}
+
+.text-2 {
+    margin-top: 3rem;
+}
+
+.text-2 button {
+    border: 1.3px solid #bd9d1d;
+    background: none;
+    color: #bd9d1d;
+    width: 12rem;
+    height: 2.5rem;
+    cursor: grab;
+    position: relative;
+    outline: none;
+    overflow: hidden;
+}
+
+.text-2 button:hover {
+    left: 0;
+    background: #bd9d1d;
+    color: #111;
+}
+
+.about-UTC h3 {
+    font-size: 1.2rem;
+    color: #dfc149;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 0.7px;
+}
+
+.about-UTC p {
+    font-size: 0.9rem;
+    color: #dfc149;
+    font-family: sans-serif;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+}
+
+.about-UTC button {
+    font-size: 0.9rem;
+    color: #e0bc2d;
+    font-family: sans-serif;
+    background: none;
+    letter-spacing: 0.5px;
+    border: 1px solid #e0bc2d;
+    padding: 10px 10px;
+}
+
+.about-UTC button:hover {
+    left: 0;
+    background: #bd9d1d;
+    color: #111;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/*  the end */
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: sans-serif;
+    background: #1f1f1f;
+    color: #b6862c;
+    padding: 10px;
+}
